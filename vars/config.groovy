@@ -1,4 +1,3 @@
-import com
 def call(String filePath, Closure closure){
 def request = libraryResource 'globalconfig.yml'
 def map = readYaml text: request
