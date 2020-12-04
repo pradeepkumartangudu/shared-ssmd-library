@@ -1,4 +1,3 @@
-package com
 class CommanJenkinsTemplate{
 Map map_var
 def commanJenkinsTemplate()
