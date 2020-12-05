@@ -4,7 +4,7 @@ def map = readYaml text: request
 
 if(!filePath.isEmpty())
 {
-def file_exist = findfile (glob: filePath)
+def file_exist = findFiles (glob: filePath)
 if (file_exist.lenght == 1){
 def map1 = readYAML file: filePath
 map.putAll(map1)
