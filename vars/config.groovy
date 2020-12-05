@@ -18,5 +18,5 @@ closure()
 }
 
 def call(Closure closure){
-call(''.closure)
+call(' '.closure)
 }
