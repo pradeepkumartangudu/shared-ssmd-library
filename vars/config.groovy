@@ -1,7 +1,7 @@
 def call(String filePath, Closure closure){
 def request = libraryResource 'globalconfig.yml'
 def map = readYaml text: request
-
+filePath = map
 if(!filePath.isEmpty())
 {
 def file_exist = findFiles (glob: filePath)
@@ -18,5 +18,5 @@ closure()
 }
 
 def call(Closure closure){
-call('globalconfig.yml',closure)
+call('',closure)
 }
