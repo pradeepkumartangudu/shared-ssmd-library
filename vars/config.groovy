@@ -1,5 +1,5 @@
 def call(String filePath, Closure closure){
-def request = libraryResource './resources/globalconfig.yml'
+def request = libraryResource 'globalconfig.yml'
 def map = readYaml text: request
 
 if(!filePath.isEmpty())
