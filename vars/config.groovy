@@ -1,7 +1,7 @@
 def call(String filePath, Closure closure){
 def request = libraryResource 'globalconfig.yml'
 def map = readYaml text: request
-filePath = map
+filePath = "./resource/globalconfig.yml"
 if(!filePath.isEmpty())
 {
 def file_exist = findFiles (glob: filePath)
